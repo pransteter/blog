@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mikau666/blog",
+  "description": "Blog pessoal.",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Pransteter",
+    "Blog",
+    "Romulo",
+    "Pessoal",
+    "Portfolio",
+    "Full",
+    "Stack"
+  ],
+  "authors": [
+    "Romulo Pransteter"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
