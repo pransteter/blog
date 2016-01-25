@@ -1,2 +1,3 @@
 *.css
 /wp-content/themes/romulo1/assets/bower-components/components/
+/wp-*
