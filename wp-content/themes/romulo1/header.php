@@ -11,6 +11,13 @@
 
     <body>
         <header>
-        <!-- Cabeçalho -->
+            <div class="container-header">
+                <div class="box-logo">
+                    <img src="<?php echo get_template_directory_uri() ?>">
+                </div>
+                <div class="box-menu">
+                <?php wp_nav_menu(array('container' => '')); ?>
+                </div>
+            </div>
         </header>
         <section>
