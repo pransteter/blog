@@ -11,6 +11,14 @@
 
     <body>
         <header>
-        <!-- Cabeçalho -->
+            <div class="container-header">
+                <div class="box-logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/imgs/logo-demo.jpg">
+                </div>
+                <div class="box-menu">
+                    <img class="btn-menu-mobile" src="<?php echo get_template_directory_uri(); ?>/imgs/mobile-icon.svg">
+                    <?php wp_nav_menu(array('container' => '')); ?>
+                </div>
+            </div>
         </header>
         <section>

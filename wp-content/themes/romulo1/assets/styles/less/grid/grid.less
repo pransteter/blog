@@ -4,8 +4,9 @@
 
 @gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
 
-// Set @total-width to 100% for a fluid layout
-@total-width: @gridsystem-width;
+//@total-width: @gridsystem-width;
+
+@total-width: 100%;
 
 .clearfix() {
 	*zoom:1;
@@ -18,6 +19,16 @@
 	&:after {
 	    clear:both;
 	}
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+	width: 100%;
+	.clearfix;
 }
 
 .row(@columns:@columns) {
