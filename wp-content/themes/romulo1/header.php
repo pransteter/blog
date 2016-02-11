@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <title>Rômulo Pransteter | Blog Pragmático</title>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
-        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,600italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
@@ -15,10 +15,10 @@
                 <div class="box-logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/imgs/logo-demo.jpg">
                 </div>
-                <div class="box-menu">
+                <div class="box-btn-menu">
                     <img class="btn-menu-mobile" src="<?php echo get_template_directory_uri(); ?>/imgs/mobile-icon.svg">
-                    <?php wp_nav_menu(array('container' => '')); ?>
                 </div>
             </div>
+            <?php wp_nav_menu(array('container' => '')); ?>
         </header>
         <section>
