@@ -2,6 +2,7 @@
 
 <div>
 	<?php
+	
 		/*
 		Linhas para listar posts da categoria "ultimas atualizações"
 		$arguments = ['category' => 2];
