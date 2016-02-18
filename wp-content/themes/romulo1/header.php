@@ -19,6 +19,8 @@
                     <img id="btn-mobile" class="btn-menu-mobile" src="<?php echo get_template_directory_uri(); ?>/imgs/mobile-icon.svg">
                 </div>
             </div>
-            <?php wp_nav_menu(array('container' => '' , 'menu_id' => 'menu-principal')); ?>
+            <div class="container-menu">
+                <?php wp_nav_menu(array('container' => '' , 'menu_id' => 'menu-principal')); ?>
+            </div>
         </header>
         <section>

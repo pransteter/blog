@@ -1,29 +1,43 @@
 /* HEADER */
 header
 {
-
 	.container-header
 	{
-		
+		.column(3);
 		.box-logo
 		{
-			
+			.column(12);
 			img
 			{
-				
 			}
 		}
 		.box-btn-menu
 		{
-	
+			.column(0);
 			.btn-menu-mobile
 			{
-				
+				display: none;
 			}
 		}
+	}
+	.container-menu
+	{
+		.column(9);
 		.menu
 		{
-			
+			.column(8);
+			display: block;
+		    margin: 0 auto;
+		    float: none;
+		    .menu-item{
+		    	.column(4);
+		    	padding: 41px 0;
+		    	a{
+		    		font-size: 1em;
+		    	}
+		    	.sub-menu{
+		    	}
+		    }
 		}
 	}
 }
