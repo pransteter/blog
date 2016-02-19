@@ -34,6 +34,29 @@ header
 		    	padding: 41px 0;
 		    	a{
 		    		font-size: 1em;
+		    		&::after
+		    		{
+		    			content: "";
+					    display: inline-block;
+					    position: relative;
+					    top: 7px;
+					    width: 25px;
+					    height: 25px;
+					    margin-left: 5px;
+					    background-image: url(imgs/icons/arrow-down-slim.png);
+					    background-repeat: no-repeat;
+					    background-size: cover;
+					    opacity: .5;
+		    		}
+		    		&:hover
+		    		{
+		    			color: #B5B5B5;
+		    			text-decoration: underline;
+		    			&::after
+		    			{
+		    				opacity: .25;
+		    			}
+		    		}
 		    	}
 		    	.sub-menu{
 		    	}
