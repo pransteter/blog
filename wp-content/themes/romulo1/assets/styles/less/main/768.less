@@ -30,35 +30,113 @@ header
 		    margin: 0 auto;
 		    float: none;
 		    .menu-item{
-		    	.column(4);
-		    	padding: 41px 0;
-		    	a{
+		    	/*.column(4);
+		    	padding: 41px 0;*/
+		    	// Botão do menu sem submenu.
+		    	a
+		    	{
+		    		.column(4);
+		    		padding: 41px 0;
 		    		font-size: 1em;
-		    		&::after
+		    		color: #777;
+		    		letter-spacing: 0.1em;
+		    		&:hover
 		    		{
-		    			content: "";
-					    display: inline-block;
-					    position: relative;
-					    top: 7px;
-					    width: 25px;
-					    height: 25px;
-					    margin-left: 5px;
-					    background-image: url(imgs/icons/arrow-down-slim.png);
-					    background-repeat: no-repeat;
-					    background-size: cover;
-					    opacity: .5;
+		    			color: #333;
+		    			text-decoration: underline;
+		    			background-color: #EEE;
+		    		}
+		    	}
+		    	// Botão do menu com submenu.
+		    	&.menu-item-has-children
+		    	{
+		    		/*padding-top: 31px;*/
+		    		a
+		    		{
+		    			padding-top: 31px;
+		    			&::after
+			    		{
+			    			content: "";
+						    display: inline-block;
+						    position: relative;
+						    top: 7px;
+						    width: 25px;
+						    height: 25px;
+						    margin-left: 5px;
+						    background-image: url(imgs/icons/arrow-down-slim.png);
+						    background-repeat: no-repeat;
+						    background-size: cover;
+						    opacity: .4;
+			    		}
+			    		&:hover
+			    		{
+			    			&::after
+			    			{
+			    				opacity: .7;
+			    			}
+			    		}
 		    		}
 		    		&:hover
 		    		{
-		    			color: #B5B5B5;
-		    			text-decoration: underline;
-		    			&::after
+		    			.sub-menu
 		    			{
-		    				opacity: .25;
+		    				display: block;
 		    			}
 		    		}
 		    	}
-		    	.sub-menu{
+		    	.sub-menu
+		    	{
+					display: none;
+					position: absolute;
+					float: none;
+					width: 200px;
+					padding: 0;
+					margin: 0;
+					background-color: white;
+					border-radius: 10px;
+					box-shadow: 0px 0px 7px black;
+					top: 80px;
+    				right: 200px;
+    				list-style-type: none;
+					.menu-item
+					{
+						/*width: 100%;
+						padding: 15px 0;*/
+						a
+						{
+							width: 100%;
+							padding: 15px 0;
+							margin: 0;
+							&::after
+				    		{
+				    			display: none;
+				    		}
+			    			
+						}
+						&:nth-child(1)
+		    			{
+		    				a
+		    				{
+		    					&:hover
+			    				{
+			    					border-top-left-radius: 10px;
+			    					border-top-right-radius: 10px;
+			    				}
+		    				}
+		    				
+		    			}
+		    			&:nth-child(2)
+		    			{
+		    				a 
+		    				{
+		    					&:hover
+			    				{
+			    					border-bottom-left-radius: 10px;
+			    					border-bottom-right-radius: 10px;
+			    				}
+		    				}
+		    			}
+					}
 		    	}
 		    }
 		}
