@@ -1,14 +1,15 @@
 /* HEADER */
 header
 {
-	position: relative;
+	position: fixed;
 	display: block;
 	float: left;
 	background-color: white;
 	/*background-color: rgba(255,255,255, 0.3);*/
 	width: 100%;
 	height: 100px;
-	box-shadow: 0 1px 10px #000;
+	box-shadow: 0 1px 10px #ddd;
+	z-index: 10;
 	.container-header
 	{
 		.column(12);
@@ -23,7 +24,7 @@ header
 				display: block;
 				float: none;
 				max-height: 80px;
-				margin: 10px auto;
+				margin: 36px auto;
 			}
 		}
 		.box-btn-menu
@@ -61,7 +62,8 @@ header
 		    	{
 		    		padding: 20px 0;
 		    		text-decoration: none;
-		    		color: #6f5499;
+		    		/*color: #6f5499;*/
+					color: #77c124;
 		    		font-size: 1.5em;
 		    		position: relative;
 		    		display: block;
@@ -84,4 +86,15 @@ footer
 	width: 100%;
 	height:50px;
 	bottom:0;
+}
+
+section
+{
+	.conteudo-posts
+	{
+		position: relative;
+		display: block;
+		float: left;
+		margin-top: 100px;
+	}
 }
