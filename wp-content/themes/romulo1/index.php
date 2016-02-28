@@ -36,7 +36,7 @@
 	blandit ut orci. Phasellus eleifend quam eget nulla tincidunt porta. Maecenas varius viverra neque in c
 	ongue. Aliquam magna mi, gravida sit amet dui ac, laoreet commodo velit.</p>
 
-		
+
 </div>
 
 <?php get_footer(); ?>
