@@ -14,10 +14,25 @@
             <header id="top">
                 <div class="container-header">
                     <div class="box-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/logo2.png">
+                        <?php
+
+                            if(is_page)
+                            {
+                                if($post->ID == 5)
+                                {
+                                    echo '<h1 class="nome-logo"> Rômulo Pransteter </h1>';
+                                }
+                                else
+                                {
+                                    echo '<span class="nome-logo"> Rômulo Pransteter </span>';
+                                }
+                            }
+
+                        ?>
+                        <img class="imagem-logo" src="<?php echo get_template_directory_uri(); ?>/imgs/logo2.png">
                     </div>
                     <div class="box-btn-menu">
-                        <img id="btn-mobile" class="btn-menu-mobile" src="<?php echo get_template_directory_uri(); ?>/imgs/mobile-icon.svg">
+                        <img id="btn-mobile" class="btn-menu-mobile" src="<?php echo get_template_directory_uri(); ?>/imgs/btn-mobile.png">
                     </div>
                 </div>
                 <div class="container-menu">

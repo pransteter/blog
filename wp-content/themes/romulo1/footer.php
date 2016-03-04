@@ -14,6 +14,9 @@
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/bower-components/components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/bower-components/components/jquery-ui/ui/core.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/bower-components/components/jquery-ui/ui/effect.js"></script>
+		<script type="text/javascript" >
+			var URL_MAIN = '<?php echo get_template_directory_uri(); ?>';
+		</script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
 	</body>
 </html>
