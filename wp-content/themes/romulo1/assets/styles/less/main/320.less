@@ -10,6 +10,37 @@ header
 	height: 100px;
 	box-shadow: 0 1px 10px #ddd;
 	z-index: 10;
+	transition: all 0.5s ease;
+	&.slim
+	{
+		height: 50px;
+		background-color: #2a2730;
+		.container-header
+		{
+			height: 50px;
+			.box-logo
+			{
+				height: 50px;
+				.nome-logo
+				{
+					display: none;
+				}
+				.imagem-logo
+				{
+					display: block;
+				}
+			}
+			.box-btn-menu
+			{
+				height: 50px;
+				.btn-menu-mobile
+				{
+					max-width: 30px;
+					margin: 12px auto;
+				}
+			}
+		}
+	}
 	.container-header
 	{
 		.column(12);
@@ -36,7 +67,8 @@ header
 				display: none;
 				float: none;
 				max-height: 80px;
-				margin: 36px auto;
+				margin: 15px auto;
+				width: 130px;
 			}
 		}
 		.box-btn-menu

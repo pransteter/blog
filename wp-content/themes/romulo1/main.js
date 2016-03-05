@@ -2,6 +2,7 @@ var menu = document.getElementById('menu-principal');
 var btn_menu = document.getElementById('btn-mobile');
 
 $(window).load(function(){
+
 	$(btn_menu).on('click' , function(){
 		if($(this).hasClass('activated'))
 		{
@@ -12,8 +13,14 @@ $(window).load(function(){
 			$(this).addClass('activated').attr('src' , URL_MAIN+'/imgs/btn-mobile-activated2.png');
 		}
 
-		$(menu).slideToggle('fast' , function(){
-
-		});
+		$(menu).slideToggle('fast');
 	});
+
+});
+
+$(window).on('scroll' , function() {
+
+	if ($(this).scrollTop() > 1){ $('header').addClass("slim"); }
+	else{ $('header').removeClass("slim"); }
+
 });
