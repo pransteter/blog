@@ -1,9 +1,15 @@
 /* HEADER */
 header
 {
+	background-color: rgba(255,255,255, 0.03);
+	box-shadow: none;
 	&.slim
 	{
 		background-color: white;
+		box-shadow: 0 1px 10px #ddd;
+		-webkit-box-shadow: 0 1px 10px blur #ddd;
+		-moz-box-shadow: 0 1px 10px blur #ddd;
+		box-shadow: 0 1px 10px blur #ddd;
 		.container-header
 		{
 			.box-logo
@@ -31,12 +37,18 @@ header
 				{
 					a
 					{
+						color: #777;
 						padding: 18px 0 14px;
+						&:hover
+						{
+							background-color: #dddddd;
+						}
 					}
 					&.menu-item-has-children
 					{
 						a
 						{
+							color: #777;
 							padding: 8px 0 14px;
 						}
 					}
@@ -57,6 +69,8 @@ header
 			.nome-logo
 			{
 				left: 35%;
+				color: white;
+				opacity: 0.9;
 			}
 			.imagem-logo
 			{
@@ -91,7 +105,9 @@ header
 		    		.column(4);
 		    		padding: 41px 0;
 		    		font-size: 1em;
-		    		color: #777;
+		    		/*color: #777;*/
+					color: white;
+					opacity: 0.9;
 		    		letter-spacing: 0.1em;
 					font-weight: 600;
 					-webkit-transition: all .5s;
@@ -102,9 +118,12 @@ header
 		    		&:hover
 		    		{
 		    			//color: #6f5499;
-						color: #77c124;
+						/*color: #77c124;*/
+						color: #777;
 		    			/*text-decoration: underline;*/
-						background-color: #EEE;
+						/*background-color: #EEE;*/
+						background-color: white;
+						opacity: 1;
 						box-shadow: 0px 1px 10px #EEE;
 		    		}
 		    	}
@@ -124,16 +143,19 @@ header
 						    width: 25px;
 						    height: 25px;
 						    margin-left: 5px;
-						    background-image: url(imgs/icons/arrow-down-slim.png);
+						    background-image: url(imgs/icons/arrow-down-slim2.png);
 						    background-repeat: no-repeat;
 						    background-size: cover;
-						    opacity: .4;
+						    opacity: 1;
 			    		}
 			    		&:hover
 			    		{
+							background-color: white;
+							opacity: 1;
 			    			&::after
 			    			{
-			    				opacity: .7;
+								background-image: url(imgs/icons/arrow-down-slim.png);
+			    				opacity: .6;
 			    			}
 			    		}
 		    		}
@@ -170,10 +192,15 @@ header
 							width: 100%;
 							padding: 15px 0;
 							margin: 0;
+							color: #777;
 							&::after
 				    		{
 				    			display: none;
 				    		}
+							&:hover
+							{
+								background-color: #DDDDDD;
+							}
 			    			
 						}
 						&:nth-child(1)
@@ -203,6 +230,14 @@ header
 		    	}
 		    }
 		}
+	}
+}
+
+section
+{
+	.conteudo-posts
+	{
+		margin-top: 0;
 	}
 }
 
