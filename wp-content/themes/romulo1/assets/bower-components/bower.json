@@ -28,6 +28,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "jquery-ui": "jquery.ui#^1.11.4"
+    "jquery-ui": "jquery.ui#^1.11.4",
+    "flexslider": "FlexSlider#^2.6.0"
   }
 }

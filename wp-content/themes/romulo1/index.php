@@ -1,6 +1,21 @@
 <?php get_header(); ?>
 
 <div class="conteudo-posts">
+
+	<div id="slider-principal" class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/1.jpg" />
+			</li>
+			<li>
+				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/2.jpg" />
+			</li>
+			<li>
+				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/3.jpg" />
+			</li>
+		</ul>
+	</div>
+
 	<?php
 	
 		/*Linhas para listar posts da categoria "ultimas atualizações"
@@ -9,6 +24,9 @@
 		echo "<pre>"; print_r($posts); echo "<hr>";exit;*/
 
 	?>
+
+
+
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mauris magna.
 		Vestibulum imperdiet luctus maximus. Pellentesque ut tellus auctor lorem elementum
 		scelerisque quis id purus. Quisque commodo et velit a euismod. Ut viverra mauris quis
@@ -69,4 +87,8 @@
 
 </div>
 
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/bower-components/components/flexslider/flexslider.css" />
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/bower-components/components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/bower-components/components/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/scripts/index.js"></script>
 <?php get_footer(); ?>
