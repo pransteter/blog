@@ -1,6 +1,6 @@
             </section>
             <footer id="bottom">
-				<div class="container-desenvolvido"><p>Desenvolvido por: <em>Rômulo Pransteter da Silva</em></p></div>
+				<div class="container-desenvolvido"><p>DEV BY RÔMULO PRANSTETER </p></div>
 				<div class="container-contato"><p></p><!--Contato - Possível botão para abrir modal --></div>
 				<div class="container-icons">
 					<div class="component">
