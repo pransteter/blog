@@ -5,12 +5,14 @@
 	<div id="slider-principal" class="flexslider">
 		<ul class="slides">
 			<li>
-				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/1.jpg" />
+				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/3.jpg" />
 			</li>
 			<li>
-				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/2.jpg" />
+				<!--<img src="<?php /*echo get_template_directory_uri(); */?>/imgs/slide/2.jpg" />-->
+				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/3.jpg" />
 			</li>
 			<li>
+				<!--<img src="<?php /*echo get_template_directory_uri(); */?>/imgs/slide/3.jpg" />-->
 				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/3.jpg" />
 			</li>
 		</ul>
@@ -25,7 +27,10 @@
 
 	?>
 
-
+    <article>
+        <h1> Rômulo Pransteter da Silva </h1>
+        <h2> Web Developer Full-Stack </h2>
+    </article>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mauris magna.
 		Vestibulum imperdiet luctus maximus. Pellentesque ut tellus auctor lorem elementum
