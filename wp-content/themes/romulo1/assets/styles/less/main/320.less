@@ -281,6 +281,11 @@ section
 		float: left;
 		margin-top: 100px;
 		overflow-x: hidden;
+		.flexslider-custom
+		{
+			display: none !important;
+			margin-bottom: 0 !important;
+		}
 	}
 }
 
@@ -317,11 +322,6 @@ section
 	top: 24px;
 }
 
-.flexslider-custom
-{
-	margin-bottom: 0 !important;
-}
-
 .pagina-principal
 {
 	position: relative;
@@ -350,9 +350,26 @@ section
 		width: 100%;
 		margin-top: 0;
 	}
-	p
+	.container-texto-perfil
 	{
-		font-size: 1.2em;
-		color: #555;
+		.column(12);
+		p
+		{
+			font-size: 1.3em;
+			color: #555;
+			line-height: 1.4;
+		}
+	}
+	.container-img-perfil
+	{
+		.column(12);
+		img
+		{
+			position: relative;
+			display: block;
+			float: none;
+			margin: 0 auto;
+			border-radius: 10px;
+		}
 	}
 }
