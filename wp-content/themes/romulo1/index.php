@@ -7,18 +7,6 @@
 			<li>
 				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/6.jpg" />
 			</li>
-			<li>
-				<!--<img src="<?php /*echo get_template_directory_uri(); */?>/imgs/slide/2.jpg" />-->
-				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/6.jpg" />
-			</li>
-			<li>
-				<!--<img src="<?php /*echo get_template_directory_uri(); */?>/imgs/slide/3.jpg" />-->
-				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/6.jpg" />
-			</li>
-			<li>
-				<!--<img src="<?php /*echo get_template_directory_uri(); */?>/imgs/slide/3.jpg" />-->
-				<img src="<?php echo get_template_directory_uri(); ?>/imgs/slide/6.jpg" />
-			</li>
 		</ul>
 	</div>
 
@@ -41,7 +29,8 @@
 		</div>
 
 		<div class="container-texto-perfil">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mauris magna.
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel mauris magna.
 				Vestibulum imperdiet luctus maximus. Pellentesque ut tellus auctor lorem elementum
 				scelerisque quis id purus. Quisque commodo et velit a euismod. Ut viverra mauris quis
 				ligula ullamcorper blandit. Sed ante elit, elementum quis ultrices ut, feugiat a justo.
