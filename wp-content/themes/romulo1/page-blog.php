@@ -12,15 +12,27 @@
                     'post_type' => 'post'
                 );
 
-                //globals $post;
-
                 $posts_tutorials = wp_get_recent_posts($arguments , OBJECT);
 
                 if (isset($posts_tutorials[0]) && is_object($posts_tutorials[0]))
                 {
                     foreach($posts_tutorials as $tutorial)
-                    {
-                        
+                    {   
+                        echo getExcerptOfObject($tutorial);
+                        echo "<br>";
+                    }
+                }
+
+                $arguments['category'] = 4;
+
+                $posts_thoughts = wp_get_recent_posts($arguments , OBJECT);
+
+                if (isset($posts_thoughts[0]) && is_object($posts_thoughts[0]))
+                {
+                    foreach($posts_thoughts as $thoughts)
+                    {   
+                        echo getExcerptOfObject($thoughts);
+                        echo "<br>";
                     }
                 }
 

@@ -9,3 +9,8 @@ register_nav_menus( array(
 ) );
 
 add_post_type_support( 'page', 'excerpt' );
+
+function getExcerptOfObject(WP_Post $postObject)
+{
+	return substr($postObject->post_content, 0, 150) . '...';
+}
