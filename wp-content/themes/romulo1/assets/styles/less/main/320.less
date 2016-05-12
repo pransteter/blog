@@ -287,6 +287,68 @@ section
 			margin-bottom: 0 !important;
 		}
 	}
+	.conteudo-blog
+	{
+		position: relative;
+	    display: block;
+	    float: left;
+	    overflow-x: hidden;
+		margin-top: 100px;
+		.banner-top{
+			display: none;
+		}
+		.recent-posts{
+			.container-post{
+				.column(11);
+				float: none;
+				margin:0 auto;
+				display: block;
+				border-style: solid;
+				border-width: 1px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				border-radius: 10px;
+				box-sizing: border-box;
+				&.container-verde{
+					border-color: #77c124;
+				}
+				.titulo-category-posts{
+					position: relative;
+					display: block;
+					float: left;
+					width: 100%;
+					padding: 25px 0;
+					text-align: center;
+					color: #77c124;
+					font-size: 1.2em;
+				}
+				.box-posts{
+					position: relative;
+					display: block;
+					width: 100%;
+					margin-top: 73px;
+					.excerpt{
+						position: relative;
+						display: block;
+						padding: 0 15px;
+						margin: 25px 0 0;
+						&:nth-child(2){
+							margin-top:0;
+						}
+					}
+					.link-see-more{
+						position: relative;
+						display: block;
+						padding: 0 15px;
+						margin-top: 5px;
+						&:last-child{
+							margin-bottom:10px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .dashicons-id
@@ -373,3 +435,4 @@ section
 		}
 	}
 }
+
