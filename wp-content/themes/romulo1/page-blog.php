@@ -28,7 +28,7 @@
                             foreach($posts_tutorials as $tutorial)
                             {
                                 echo '<p class="excerpt">' . getExcerptOfObject($tutorial) . '</p>';
-                                echo '<a class="link-see-more"> See more </a>';
+                                echo '<a href="'.site_url('').'/thoughts/'.$tutorial->post_name.'" class="link-see-more"> See more </a>';
                             }
                         }
                     ?>
@@ -45,10 +45,10 @@
 
                         if (isset($posts_thoughts[0]) && is_object($posts_thoughts[0]))
                         {
-                            foreach($posts_thoughts as $thoughts)
+                            foreach($posts_thoughts as $thought)
                             {
-                                echo '<p class="excerpt">' . getExcerptOfObject($thoughts) . '</p>';
-                                echo '<a class="link-see-more"> See more </a>';
+                                echo '<p class="excerpt">' . getExcerptOfObject($thought) . '</p>';
+                                echo '<a href="'.site_url('').'/thoughts/'.$thought->post_name.'" class="link-see-more"> See more </a>';
                             }
                         }
                     ?>
